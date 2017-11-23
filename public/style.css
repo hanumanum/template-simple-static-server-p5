@@ -1,0 +1,277 @@
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #061c31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#defaultCanvas0 {
+    border: 2px solid white;
+}
+
+#centerImage {
+    /*background-image: url("");*/
+    background-repeat: no-repeat;
+    width: 539px;
+    height: 304px;
+    background-size: cover;
+}
+
+
+/* Popup */
+
+#popup {
+    /*   display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+    background-image: url("images/popups/bg-modal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#popupIcon {
+    display: block;
+    margin: 7% auto 3%;
+}
+
+#popupBreacker {
+    width: 160px;
+    margin: 0px auto 14px;
+}
+
+.popupButton {
+    border-radius: 2px;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    margin: 5% auto;
+    width: 10%;
+    font-size: 0.8em;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+
+.hiddenPopup {
+    -webkit-animation: fadeIn 1s;
+    text-align: center;
+    vertical-align: middle;
+    animation: fadeIn 1s;
+    animation-timing-function: linear;
+}
+
+.shownPopup {
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    -webkit-animation: fadeOut 1s;
+    text-align: center;
+    vertical-align: middle;
+    animation: fadeOut 0.5s;
+    animation-timing-function: linear;
+}
+
+.shownPopup div {
+    width: 70%;
+    font-size: 0.9em;
+    margin: 10px auto;
+    padding: 24px;
+    margin-top: 20px;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Safari and Chrome*/
+
+@-webkit-keyframes welcome {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/*Safari and Chrome*/
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+/* Question box */
+
+.shownQuestionBox {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30%;
+    min-height: 40px;
+    border-radius: 1px;
+    font-size: 12px;
+    padding: 8px 5px 8px 0px;
+    background: url("images/popups/line-01.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.shownQuestionBox #topcont {
+    background-color: white;
+    padding: 7px;
+    min-height: 50px;
+}
+
+.shownQuestionBox #icon {
+    background: white url("images/popups/icon-question.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    float: left;
+    margin-right: 6px;
+}
+
+.hiddenQuestionBox {
+    display: none;
+}
+
+
+/* Answer Box */
+
+.shownAnswerBox {
+    display: block;
+    position: absolute;
+    background-color: white;
+    z-index: 999;
+    width: 30%;
+    font-size: 12px;
+    background: url("images/popups/line-02.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.shownAnswerBox #text {
+    background-color: white;
+    padding: 6px;
+    border-radius: 1px;
+}
+
+.shownAnswerBox #text p {
+    margin: 3px 0px 7px 6px;
+}
+
+.hiddenAnswerBox {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.tipText {
+    width: 80%;
+    text-align: left;
+    margin-top: 24px;
+    padding: 20px !important;
+    /* line-height: 10px; */
+    border: solid 1p #1ACAF1;
+}
+
+.tipText>img {
+    width: 3%;
+    margin: 0px 7px 0px 0px;
+    float: left;
+}
+
+.tipforCorrect {
+    border: solid 3px#1ACAF1;
+}
+
+.tipforIncorrect {
+    border: solid 3px yellow;
+}
+
+.tiptip {
+    border: solid 1px#1ACAF1;
+}
+
+
+/* menu */
+
+#gamemenu{
+    width:5%;
+    height:400px;
+    z-index: 6666;
+    position: absolute;
+    top: middle;
+    left:20px;
+}
+
+.gamemenu-items{
+    background:url("images/common/icons-menu.png");
+    width:87px;
+    height:87px;
+    opacity:0.5; 
+    cursor: pointer;
+    zoom: 0.7;
+}
+
+.gamemenu-items:hover{
+    opacity:1; 
+}
+
+#gamemenu-back{
+    background-position-y: 0px;
+}
+
+#gamemaneu-settings{
+    background-position-y: -100px;
+}
+
+#gamemaneu-share{
+    background-position-y: -200px;     
+}
+
+#gamemaneu-help{
+    background-position-y: -299px;
+}
+
+#gamemaneu-close{
+    background-position-y: -396px;          
+}
+
+#popup-menu-settings, #popup-menu-share, #popup-menu-help{
+    display: none;
+}
